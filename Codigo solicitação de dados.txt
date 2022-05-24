@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		String nome;
+		String cpf;
+		String sim;
+		int ano_nasc;
+		Scanner leia = new Scanner(System.in);
+		System.out.println("Qual é o seu nome? ");
+		nome = leia.nextLine();
+		System.out.println("Qual é o número do seu cpf? ");
+		cpf = leia.nextLine();
+		System.out.println("Qual é o ano do seu nascimento");
+		ano_nasc = leia.nextInt();
+		System.out.println("Seus dados são: "+"\n"+"Nome: "+nome+"\n"+"CPF: "+cpf+"\n"+"Idade: "+(2022-ano_nasc));
+		System.out.println("Seus dados estão corretos? Digite sim ou não");
+		leia.nextLine();
+		sim = leia.nextLine();
+		if (sim.equals(sim)){
+		    System.out.println("Obrigada por informar.");
+		}
+		else{
+		    System.out.println("Ops, que pena. Pode digitar seus dados novamente?");
+		}
+	}
+	
+}
